@@ -55,7 +55,7 @@ RUN chown -R www-data: .
 
 COPY LocalSettings.php /var/www/html/
 COPY insertenv.sh /
-
+RUN /entrypoint.sh
 ENTRYPOINT ["/insertenv.sh"]
 CMD ["apache2-foreground"]
 
