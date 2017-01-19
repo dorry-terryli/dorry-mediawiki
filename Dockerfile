@@ -47,7 +47,7 @@ COPY apache/mediawiki.conf /etc/apache2/
 RUN echo Include /etc/apache2/mediawiki.conf >> /etc/apache2/apache2.conf
 
 COPY docker-entrypoint.sh /entrypoint.sh
-RUN /entrypoint.sh
+#RUN /entrypoint.sh
 
 COPY LocalSettings.php /var/www/html/
 COPY insertenv.sh /
