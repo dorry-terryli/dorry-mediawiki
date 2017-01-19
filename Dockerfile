@@ -49,6 +49,7 @@ RUN echo Include /etc/apache2/mediawiki.conf >> /etc/apache2/apache2.conf
 COPY docker-entrypoint.sh /entrypoint.sh
 #RUN /entrypoint.sh
 
+WORKDIR /var/www/html/
 RUN tar cf - --one-file-system -C /usr/src/mediawiki . | tar xf -
 RUN chown -R www-data: .
 
