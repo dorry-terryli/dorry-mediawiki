@@ -8,4 +8,5 @@ echo "\
 \$wgDBuser = \"${DB_USER:-root}\";\
 \$wgDBpassword = \"${DB_PASSWORD:-abc123_}\";" >> /var/www/html/LocalSettings.php
 
+apache2-foreground
 #exec /entrypoint.sh
