@@ -19,10 +19,10 @@ $ docker build -t dorry-mediawiki -f Dockerfile_arm .
 ```
 
 ## Environment
-SERVER_ADDR           server mediawiki service address, e.g.,http://test-a:9000
-DB_SERVER_IP          database ip. e.g., 172.17.0.2
-DB_USER               database user. e.g., root
-DB_PASSWORD           database user password. e.g., abc123_
+* SERVER_ADDR           server mediawiki service address, e.g.,http://test-a:9000
+* DB_SERVER_IP          database ip. e.g., 172.17.0.2
+* DB_USER               database user. e.g., root
+* DB_PASSWORD           database user password. e.g., abc123_
 
 ## Run Docker Image
 ```bash
