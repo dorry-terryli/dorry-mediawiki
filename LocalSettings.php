@@ -58,7 +58,7 @@ $wgDBtype = "mysql";
 #if ( !$wgDBserver ){
 #    $wgDBserver = "172.17.0.2";
 #}
-$wgDBname = "wiki";
+$wgDBname = "mediawiki";
 #$wgDBuser = getenv('DATABASE_USER');
 #if ( !$wgDBuser ){
 #    $wgDBuser = "root";
