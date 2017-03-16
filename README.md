@@ -28,3 +28,9 @@ $ docker build -t dorry-mediawiki -f Dockerfile_arm .
 ```bash
 $ docker run -itd --name dorry-mediawiki -p 9000:9000 --link mysql:mysql --privileged dorry-mediawiki
 ```
+## Update Admin Password
+Enter mysql container,
+```bash
+mysql -uroot -pxxx
+UPDATE user SET user_password = md5(CONCAT('1-',md5('abc123_'))) WHERE user_id=1;
+```
